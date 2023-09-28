@@ -5,7 +5,7 @@ const Header = ({menuHiden, setMenuHiden}) => {
     return(
         <header>
             <div className={style.containerHead} id="start">
-                <h1>Ernesto Barraza</h1>
+                <h1>Porfolio Adrianer</h1>
                 <img 
                 src={listImg} 
                 alt="Menu image" 
