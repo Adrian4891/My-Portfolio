@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:column;
+    background-color:#1a1818;
+    gap: 10px;
+    padding: 20px;
+    color:  #edecf1;
+}
+ 
+.footer  p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.iconContact {
+    display: flex;
+    gap: 20px;
+}
+
+.iconContact a {
+    font-size: 25px ;
+    color: #edecf1;
+}
+ 
+@media (max-width:900px){
+    .footer {
+        align-items: start;      
+        padding: 20px;
+        color:  #edecf1;
+    }
+}
+
+@media (max-width:425px){
+    .footer p {
+        font-size: 18px;
+    }
+
+    .iconContact a{
+      font-size: 20px ;
+    }
+}
+

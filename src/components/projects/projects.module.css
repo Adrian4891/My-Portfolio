@@ -1,0 +1,269 @@
+.barek, .smallApps {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+ .rickAndMorty, .triviar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row-reverse;
+ }
+ 
+ .barekDescription,.smallAppsDescripcion {
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 0px 10px 40px;
+ 
+ }
+ 
+ .rickAndMortyDescripcion,.triviarDescripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 40px 0px 10px;
+ }
+ 
+ .description{
+   font-size: 18px;
+   text-shadow: 0.5px 1px #777777
+ }
+ 
+ /*----------------proyecto-pruebas----------------------*/
+ 
+.barek {
+    background-color: #4949f4;
+}
+ 
+.project {
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.containerProjects h3 {
+    font-size: 25px;
+    text-shadow: 1px 1px #313030
+}
+ 
+.containerProjects img {
+ width:55% ;
+ object-fit: contain;
+ }
+ 
+ .barek .description{
+   color: #a3a2a5;
+ }
+ 
+ .barek h3 {
+    color: #e8e6eb;
+ }
+ 
+ .project .description {
+    font-weight: 500;
+ }
+ 
+ .project button {
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor:pointer;
+ }
+ 
+ .barek .watchProject {
+    color: #4949f4;
+    background-color: #ebe7ec ;
+    border: none;
+ }
+
+ .barek .watchProject:hover {
+     background-color: #fffdfd;
+     transition: 400ms;
+     color:#3b3bf8;
+ }
+
+ .barek .watchCode {
+    color: #fffdfd;
+    background-color: #4949f4;
+    border: 1px solid #fffdfd;
+ }
+
+ .barek .watchCode:hover {
+   color: #ffff;
+   background-color: #3636fa;
+   border: 1px solid #ffff;
+   transition: 400ms;
+}
+ 
+ /* -------------proyecto-RickAndMorty------------------------ */
+ 
+ .rickAndMorty {
+    background-color: #63fa5f;
+ }
+ 
+ .rickAndMorty h3 {
+    color: #2b2b2c;
+ }
+ 
+ .rickAndMorty .description{
+    color: #555151 ;
+ }
+ 
+ .rickAndMorty .watchProject {
+    color: #e8e6e9 ;
+    background-color: #222020;
+    border: none;
+ }
+ 
+ .rickAndMorty .watchCode {
+    color: #222020;
+    background-color: #63fa5f;
+    border: 1px solid #222020;
+ }
+
+ .rickAndMorty .watchProject:hover {
+   color: #ffff;
+   background-color: #111111;
+   transition:400ms;
+}
+ 
+.rickAndMorty .watchCode:hover {
+   color: #000000;
+   background-color: #5aee55;
+   border: 1px solid #000000;
+   transition:400ms;
+}
+ /* ----------------Pequeñas apps------------------------------------ */
+ 
+ .smallApps {
+    background-color: #ae5df2;
+ }
+ 
+ .smallApps .description {
+    color: #bfbdc2;
+ }
+ 
+ .smallApps h3 {
+    color: #e8e6eb;
+ }
+ 
+ .smallApps .watchProject {
+    color: #ae5df2;
+    background-color: #e8e6e9;
+    border: none;
+ }
+
+ .smallApps .watchProject:hover {
+   color: #a94bf7;
+   background-color: #ffff;
+   transition:400ms;
+}
+ 
+ .smallApps .watchCode {
+    color: #e8e6e9;
+    background-color: #ae5df2;
+    border: 1px solid #e8e6e9;
+ }
+
+ .smallApps .watchCode:hover {
+   color: #ffff;
+   background-color: #a84cf3;
+   border: 1px solid #ffff;
+   transition:400ms;
+}
+ 
+ /* -----------------proyecto-Triviar--------------------- */
+ 
+ .triviar {
+    background-color: #f48828;
+ }
+ 
+ .triviar .description {
+    color: #4e4b4b;
+ }
+ 
+ .triviar h3 {
+    color: #2b2b2c;
+ }
+ 
+ .triviar .watchProject {
+    color: #e8e6e9;
+    background-color: #222020;
+    border: none;
+    cursor: default;
+ }
+ 
+ .triviar .watchCode {
+    color: #222020;
+    background-color:#f48828;
+    border: 1px solid #222020;
+    cursor:default;
+ }
+
+@media (max-width:900px){
+   .barek, .smallApps {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .rickAndMorty, .triviar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .barekDescription , .smallAppsDescripcion {
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+   }
+
+   .rickAndMortyDescripcion, .triviarDescripcion {
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+   }
+
+   .containerProjects img {
+      width: 100%;    
+   }
+   
+   .watchButtons {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      padding-bottom: 30px;
+   }
+
+}
+
+@media (max-width:425px){
+   .project button {
+      margin: 0px;
+   }
+   .project {
+      width: auto;
+   }
+   .project h3 {
+      font-size: 18px;
+   }
+   .project p {
+      font-size: 15px;
+   }
+
+   .project button {
+      font-size: 15px;
+   }
+}

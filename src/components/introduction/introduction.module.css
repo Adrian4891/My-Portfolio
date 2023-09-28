@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #222020;
+    padding: 0px;
+    border: none;
+    height: 90vh;
+    position: relative;
+    z-index: 0;
+ }
+ 
+ .introduction {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    width: 550px;
+ }
+ 
+
+ .introduction .capital {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+    color: #f0ebeb;
+    text-shadow: 1px 1px #5e5b5b
+ }
+ 
+ .introduction p {
+    text-align: left;
+    color: #929090;
+    font-size: 18px;
+    text-shadow: 0.5px 1px #5e5b5b
+ }
+
+ .btnDownload {
+   background: #4949f4;
+   cursor: pointer;
+   border: none;
+   padding: 16px 25px;
+   color: azure;
+   font-size: 22px;
+   font-weight: bold;
+   position: relative;
+   border-radius: 12px;
+}
+
+.btnDownload:hover::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(45deg, #ff0000, #4a026b, #ff1493,
+   #4a026b, #ff0000, #4a026b, #ff1493
+   );
+   background-size: 800%;
+   border-radius: 10px;
+   filter: blur(8px);
+   animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+   0% {
+       background-position: 0 0;
+   }
+   50% {
+       background-position: 400% 0;
+   }
+   100% {
+       background-position: 0 0;
+   }
+}
+ 
+ .profileImg {
+    width: 280px;
+    padding-bottom: 20px;
+    border-radius: 100%;
+ }
+ 
+@media (max-width:900px){
+   .container {
+      flex-direction: column-reverse;
+      height: max-content;
+      padding:0px 20px;
+      align-items: start;
+      padding-bottom: 60px;
+   }
+   .introduction {
+      gap: 30px;
+      width: 95%;
+   }
+
+   .introduction .capital {
+      font-size: 20px;
+   }
+
+   .profileImg {
+      width: 200px;
+      padding: 20px;
+   }
+}
+
+@media (max-width:425px){
+   .introduction .capital {
+      font-size: 15px;
+   }
+   .introduction p {
+      font-size: 14px;
+   }
+
+   .btnDownload {
+      font-size: 14px;
+   }
+}

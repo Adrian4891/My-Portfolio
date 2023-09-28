@@ -1,0 +1,87 @@
+.containerExperience {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1a1818;
+    height: 100vh;
+    padding-top: 60px;
+    gap: 40px;
+ }
+ 
+ .textExperience, .titleExp {
+    width: 750px;
+ }
+
+ .textExperience {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ 
+ .titleExp h2 {
+    font-size: 40px;
+    color: #edecf1;
+    padding-bottom: 20px;
+ }
+ 
+ .titleExp h3 {
+    font-size: 24px;
+    color: #edecf1;
+ }
+ 
+ .textExperience h4 {
+    font-size: 19px;
+    color: #edecf1;
+ }
+ 
+ .textExperience h5 {
+    font-size: 17px;
+    color: #a7a6aa;
+    font-weight: 600;
+ }
+ 
+ .textExperience p {
+    font-size: 17px;
+    color: #edecf1;
+    font-weight: 550;
+ }
+ 
+@media (max-width:900px){
+   .containerExperience {
+      height: max-content;
+      align-items: start;
+   }
+   
+   .titleExp {
+      width:auto;
+      padding: 20px;
+   }
+
+   .textExperience {
+      padding: 20px;
+      width:auto;
+      text-align: left;
+   }
+
+}
+
+@media (max-width:425px){
+   
+   .titleExp h2{
+      font-size: 23px;
+   }
+
+   .textExperience h4{
+      font-size: 16px;
+   }
+
+   .textExperience h5{
+      font-size: 15px;
+   }
+   
+   .textExperience p{
+      font-size: 15px;
+   }
+}
+
