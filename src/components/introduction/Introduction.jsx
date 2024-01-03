@@ -15,9 +15,12 @@ const Introduction = () => {
                 En abril del año pasado, comencé en el mundo de la programación sin haber visto ni leído nada. Hoy siento que he aprendido muchísimo, me siento muy capaz para afrontar nuevos desafíos, siempre dándolo todo y un poco más.
                 </p>
 
-                <button className={style.btnDownload}> 
-                    Descargar curriculum
-                </button>
+                <a href="./cv/CvEBA.docx" download="how-to-download-file.docx" >
+                    <button className={style.btnDownload}> 
+                        Descargar curriculum
+                    </button>
+
+                </a>
                 
             </div>
 
